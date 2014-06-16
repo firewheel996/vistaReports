@@ -14,5 +14,9 @@ class Supervisor {
     static belongsTo = [site: MemberSite]
     
     static constraints = {
+        firstName blank: false
+        lastName blank: false
+        email email: true, blank: false
+        cellPhone size: 7..10, matches: "[^-]"
     }
 }

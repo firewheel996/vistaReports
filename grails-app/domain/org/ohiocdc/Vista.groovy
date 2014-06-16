@@ -4,6 +4,7 @@ class Vista {
     
     String firstName
     String lastName
+    String password
     String personalEmail
     String workEmail
     String cellPhone
@@ -17,6 +18,8 @@ class Vista {
         firstName blank: false
         
         lastName blank: false
+        
+        password password: true, blank: false
         
         workEmail blank: false, email: true
         
