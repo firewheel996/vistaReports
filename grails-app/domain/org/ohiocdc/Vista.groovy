@@ -13,6 +13,8 @@ class Vista {
 
     static belongsTo = [supervisor: Supervisor, site: MemberSite]
     
+    static hasMany = [reports: Report]
+    
     static constraints = {
         
         firstName blank: false
@@ -31,5 +33,6 @@ class Vista {
         
         cellPhone nullable: true, minSize: 10
         
+        reports nullable: true, maxSize: 12
     }
 }
