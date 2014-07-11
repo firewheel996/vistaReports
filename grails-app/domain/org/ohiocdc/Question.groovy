@@ -4,7 +4,8 @@ class Question {
     
     String question, answerFormat
     
-    static hasMany = [instances: ReportLayout]
+    static hasMany = [uses: ReportLayout]
+    static belongsTo = ReportLayout
 
     static constraints = {
         question blank:false
