@@ -99,8 +99,4 @@ class ReportLayoutController {
             redirect(action: "show", id: id)
         }
     }
-    
-    def addQuestion() {
-        log.error(params)
-    }
 }

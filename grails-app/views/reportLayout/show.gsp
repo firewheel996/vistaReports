@@ -36,6 +36,10 @@
 				<li class="fieldcontain">
 					<span id="questions-label" class="property-label"><g:message code="reportLayout.questions.label" default="Questions" /></span>
 					
+						<g:each in="${reportLayoutInstance.questions}" var="q">
+						<span class="property-value" aria-labelledby="questions-label"><g:link controller="question" action="show" id="${q.id}">${q?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
 				</li>
 				</g:if>
 			

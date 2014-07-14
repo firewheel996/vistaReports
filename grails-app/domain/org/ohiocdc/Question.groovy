@@ -9,7 +9,7 @@ class Question {
 
     static constraints = {
         question blank:false
-        answerFormat inList: ANSWER_FORMATS
+        answerFormat inList: ANSWER_FORMATS as List
     }
     
     String toString(){

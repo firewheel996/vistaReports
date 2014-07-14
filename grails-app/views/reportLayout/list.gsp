@@ -26,8 +26,6 @@
 					
 						<g:sortableColumn property="year" title="${message(code: 'reportLayout.year.label', default: 'Year')}" />
 					
-						<g:sortableColumn property="questions" title="${message(code: 'reportLayout.questions.label', default: 'Questions')}" />
-					
 					</tr>
 				</thead>
 				<tbody>
@@ -35,8 +33,6 @@
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
 						<td><g:link action="show" id="${reportLayoutInstance.id}">${fieldValue(bean: reportLayoutInstance, field: "year")}</g:link></td>
-					
-						<td>${fieldValue(bean: reportLayoutInstance, field: "questions")}</td>
 					
 					</tr>
 				</g:each>
